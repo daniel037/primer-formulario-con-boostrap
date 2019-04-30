@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> formulario 1</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="est.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body id="b1">
+	<div class="alert alert-primary" role="alert" align="center">
+  		PRIMER FORMULARIO CON BOOSTRAP 
+	</div>
+
+	<div class="alert alert-info" role="alert" align="center">
+ 		 FORMULARIO 
+	</div>
+
+ 
+	<div id="principal"  class="table-responsive" align="center">
+		<form method="post">
+		
+			<table class="table table-dark" id="tabla1">
+				<tr>
+					<td colspan="2" align="center"> DATOS PERSONALES </td>
+				</tr>
+				<tr>
+					<td>Nombres: </td>
+					<td>
+						<input type="text" name="nombre" class="form-control" placeholder="Nombres" required oninvalid="setCustomValidity('El campo Nombre es obligatorio')" oninput="setCustomValidity('')"> 
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>Apellidos: </td>
+					<td>
+						<input type="text" name="apellidos_txt" class="form-control"  placeholder="Apellidos" required oninvalid="setCustomValidity('El campo Apellidos es obligatorio')" oninput="setCustomValidity('')">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Fecha de nacimiento: </td>
+					<td> <input type="date" name="fecha_date" class="form-control" required>  </td>
+				</tr>
+
+				<tr>
+					<td> Genero: </td>
+					<td>  
+    					<select class="form-control" id="exampleFormControlSelect1" value='gen'>
+      						<option value="mas"> Masculino</option>
+							<option value="fem"> Femenino </option>
+    					</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"> DATOS DE REGISTRO </td>
+				</tr>
+
+				<tr>
+					<td> Correo electronico: </td>
+					<td> <input type="email" name="correo_e" required class="form-control" placeholder="name@example.com" oninvalid="setCustomValidity('Email obligatorio')" oninput="setCustomValidity('')"> </td>
+				</tr>
+
+				<tr>
+					<td> Celular  </td>
+					<td> <input type="text" pattern= "[0-9]+" name="cel" class="form-control"  placeholder="Celular"> </td>
+				</tr>
+
+				<tr>
+					<td> Idioma </td>
+					<td>
+						<select name="idio"  class="form-control" id="exampleFormControlSelect1">
+							<option value="es"> Español </option>
+							<option value="in"> Ingles </option>
+							<option value="otr"> Otro </option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td> Nombre de Usuario: </td>
+					<td>
+						<input type="text" name="nom_usuario" class="form-control"  placeholder="Nombre_usuario" required oninvalid="setCustomValidity('Se requiere un nombre de Usuario')" oninput="setCustomValidity('')">
+					</td>
+				</tr>
+
+				<tr>
+					<td> Nueva Contraseña: </td>
+					<td> <input type="password" name="cont" class="form-control"  placeholder="Contraseña" required oninvalid="setCustomValidity('Ingrese Contraseña')" oninput="setCustomValidity('')"> </td>
+				</tr>
+
+				<tr>
+					<td> Ingrese Nuevamente la Contraseña: </td>
+					<td> 
+						<input type="password" name="cont_2" class="form-control"  placeholder="Contraseña" required oninvalid="setCustomValidity('Ingrese Contraseña')" oninput="setCustomValidity('')">
+					</td>
+				</tr>
+				
+			</table>
+
+			<br>
+
+			<input type="submit" name="submit_b1" value="Registrar"  style="margin-right: 100px" class="btn btn-outline-info">
+
+			<input type="reset" name="reset" value="cancelar" class="btn btn-outline-info">
+		</form>	
+
+	</div>
+	<br><br>
+	<div class="alert alert-dark" role="alert">
+ 		Elaborado por: Daniel Salazar
+	</div>
+	
+ 
+</body>
+
+</html>

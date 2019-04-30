@@ -1,0 +1,13 @@
+#tabla1{
+    width: 40%;
+    align-content: center;
+    border: #17a2b8 5px solid;
+}
+#b1{
+    background: #343a40;
+}
+hr {
+  height: 10px;
+  background-color: red;
+}
+
